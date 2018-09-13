@@ -1,3 +1,7 @@
+pkill dpkg
+apt-get update
+dpkg --configure -a
+apt --fix-broken install -y
 locale-gen en_US.UTF-8
 passwd root
 echo "curl ipinfo.io/ip" >> /usr/bin/ii && chmod +x /usr/bin/ii
